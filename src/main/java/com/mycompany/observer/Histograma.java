@@ -9,6 +9,7 @@ package com.mycompany.observer;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -16,7 +17,7 @@ import javax.swing.JPanel;
  *
  * @author f212
  */
-public class Histograma extends JPanel{
+public class Histograma extends JPanel implements Observer{
     
     Conjunto c;
     public Histograma(Conjunto c){
